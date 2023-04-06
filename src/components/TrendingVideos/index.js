@@ -8,7 +8,7 @@ import Header from '../Header'
 import NavigationBar from '../NavigationBar'
 import ThemeAndVideoContext from '../../context/ThemeAndVideoContext'
 import FailureView from '../FailureView'
-import VideoCard from '../VideoCard'
+import TrendingVideoCard from '../TrendingVideoCard'
 
 import {
   TrendingContainer,
@@ -78,7 +78,7 @@ class TrendingVideos extends Component {
     return (
       <TrendingVideoList>
         {trendingVideos.map(eachVideo => (
-          <VideoCard key={eachVideo.id} videoDetails={eachVideo} />
+          <TrendingVideoCard key={eachVideo.id} videoDetails={eachVideo} />
         ))}
       </TrendingVideoList>
     )

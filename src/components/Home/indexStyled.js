@@ -60,7 +60,7 @@ export const SearchContainer = styled.div`
   border: 1px solid #909090;
   border-radius: 3px;
   margin: 20px;
-  width: 60%;
+  width: 90%;
   height: 40px;
   @media screen and (min-width: 576px) {
     width: 40%;

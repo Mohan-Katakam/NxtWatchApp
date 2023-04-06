@@ -3,7 +3,7 @@ import {CgPlayListAdd} from 'react-icons/cg'
 import Header from '../Header'
 import NavigationBar from '../NavigationBar'
 import ThemeAndVideoContext from '../../context/ThemeAndVideoContext'
-import VideoCard from '../VideoCard'
+import TrendingVideoCard from '../TrendingVideoCard'
 
 import {
   SavedContainer,
@@ -40,7 +40,10 @@ const SavedVideos = () => (
             {savedVideos.length > 0 ? (
               <SavedVideoList>
                 {savedVideos.map(eachVideo => (
-                  <VideoCard key={eachVideo.id} videoDetails={eachVideo} />
+                  <TrendingVideoCard
+                    key={eachVideo.id}
+                    videoDetails={eachVideo}
+                  />
                 ))}
               </SavedVideoList>
             ) : (

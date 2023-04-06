@@ -87,7 +87,7 @@ class GamingVideos extends Component {
 
   renderFailureView = () => <FailureView onRetry={this.onRetry} />
 
-  renderTrendingVideos = () => {
+  renderGamingVideos = () => {
     const {apiStatus} = this.state
 
     switch (apiStatus) {
@@ -122,7 +122,7 @@ class GamingVideos extends Component {
                   </GamingTitleIconContainer>
                   <GamingText color={textColor}>Gaming</GamingText>
                 </GamingVideoTitle>
-                {this.renderTrendingVideos()}
+                {this.renderGamingVideos()}
               </GamingContainer>
             </div>
           )
